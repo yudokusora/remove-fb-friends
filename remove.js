@@ -2,7 +2,7 @@
 // open console and paste the code
 //then paste the following code
 
-    //retrieving all page html
+     //retrieving all page html
     ok = this.document
 
     //finding the remove friend button div, and storing a copy of it
@@ -25,7 +25,7 @@
     function* removefb() {
         while (true) {
             //might be better to add a key listener to stop whenever you want.
-            nextclick = nextrec.firstElementChild.lastChild.lastElementChild.lastElementChild.lastElementChild.lastChild
+            nextclick = nextrec.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild
 
             
             nextreccopy = nextrec
@@ -51,4 +51,3 @@ function getRandomArbitrary(min, max) {
 }
     // interval set to a large value, so fb doesn't identify you as suspicious
     setInterval(greet, getRandomArbitrary(2000,5500));
-        
